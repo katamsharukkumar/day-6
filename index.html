@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h1>Date Validation:</h1>
+
+    
+
+    <form action="" method="get">
+      <fieldset>
+
+        <label for="eventDate">Enter your event date (YYYY-MM-DD):</label>
+        
+        <input type="text" placeholder="YYYY-MM-DD"
+        pattern="^(?:(19|20)\d\d)-(0[1-9]|1[0-2])-(0[1-9]|1\d|2[0-8])$|^(?:(19|20)([02468][048]|[13579][26])|2000)-02-29$|^(?:(19|20)\d\d)-(0[13-9]|1[0-2])-(29|30)$|^(?:(19|20)\d\d)-(0[13578]|1[02])-31$"
+        title="Please enter a valid date in the format YYYY-MM-DD (e.g., 2023-09-15). Leap years are considered."
+        id="eventDate" name="eventDate" required autofocus autocomplete="off"><br>
+        
+        <br>
+        <button type="submit">Submit</button>
+      </fieldset>
+      </form>
+  
+</body>
+</html>
